@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8EF7854A4C6AC7BA05FAE782 /* Pods_Pokemon_Classifier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19EC80AA286C59DB49020DE6 /* Pods_Pokemon_Classifier.framework */; };
 		FEE67B0523EE1399001EC6E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE67B0423EE1399001EC6E3 /* AppDelegate.swift */; };
 		FEE67B0723EE1399001EC6E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE67B0623EE1399001EC6E3 /* SceneDelegate.swift */; };
 		FEE67B0923EE1399001EC6E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE67B0823EE1399001EC6E3 /* ViewController.swift */; };
@@ -17,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		19EC80AA286C59DB49020DE6 /* Pods_Pokemon_Classifier.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pokemon_Classifier.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DD79678505F42A78CCAB60E /* Pods-Pokemon-Classifier.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokemon-Classifier.debug.xcconfig"; path = "Target Support Files/Pods-Pokemon-Classifier/Pods-Pokemon-Classifier.debug.xcconfig"; sourceTree = "<group>"; };
+		BFDC1D43DF389206ED1DDF44 /* Pods-Pokemon-Classifier.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokemon-Classifier.release.xcconfig"; path = "Target Support Files/Pods-Pokemon-Classifier/Pods-Pokemon-Classifier.release.xcconfig"; sourceTree = "<group>"; };
 		FEE67B0123EE1399001EC6E3 /* Pokemon-Classifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pokemon-Classifier.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEE67B0423EE1399001EC6E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEE67B0623EE1399001EC6E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EF7854A4C6AC7BA05FAE782 /* Pods_Pokemon_Classifier.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4EB78403B49D79E3F503E33E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8DD79678505F42A78CCAB60E /* Pods-Pokemon-Classifier.debug.xcconfig */,
+				BFDC1D43DF389206ED1DDF44 /* Pods-Pokemon-Classifier.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		691E8241E76154AB31775FBC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19EC80AA286C59DB49020DE6 /* Pods_Pokemon_Classifier.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FEE67AF823EE1399001EC6E3 = {
 			isa = PBXGroup;
 			children = (
 				FEE67B0323EE1399001EC6E3 /* Pokemon-Classifier */,
 				FEE67B0223EE1399001EC6E3 /* Products */,
+				4EB78403B49D79E3F503E33E /* Pods */,
+				691E8241E76154AB31775FBC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FEE67B1523EE139B001EC6E3 /* Build configuration list for PBXNativeTarget "Pokemon-Classifier" */;
 			buildPhases = (
+				4557C2C4F4B6B6A545411E3D /* [CP] Check Pods Manifest.lock */,
 				FEE67AFD23EE1399001EC6E3 /* Sources */,
 				FEE67AFE23EE1399001EC6E3 /* Frameworks */,
 				FEE67AFF23EE1399001EC6E3 /* Resources */,
+				00A73BF458A1468024E19204 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +162,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00A73BF458A1468024E19204 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pokemon-Classifier/Pods-Pokemon-Classifier-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pokemon-Classifier/Pods-Pokemon-Classifier-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pokemon-Classifier/Pods-Pokemon-Classifier-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4557C2C4F4B6B6A545411E3D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pokemon-Classifier-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FEE67AFD23EE1399001EC6E3 /* Sources */ = {
@@ -286,9 +355,11 @@
 		};
 		FEE67B1623EE139B001EC6E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DD79678505F42A78CCAB60E /* Pods-Pokemon-Classifier.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M5757NXZKD;
 				INFOPLIST_FILE = "Pokemon-Classifier/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -303,9 +374,11 @@
 		};
 		FEE67B1723EE139B001EC6E3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFDC1D43DF389206ED1DDF44 /* Pods-Pokemon-Classifier.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M5757NXZKD;
 				INFOPLIST_FILE = "Pokemon-Classifier/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

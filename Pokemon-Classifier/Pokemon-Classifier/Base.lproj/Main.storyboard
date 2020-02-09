@@ -15,16 +15,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Je9-kP-WwW">
-                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Je9-kP-WwW">
+                                <rect key="frame" x="0.0" y="44" width="375" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Je9-kP-WwW" secondAttribute="height" multiplier="1:1" id="Wlc-g3-nzV"/>
+                                </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="nsU-E0-0yH">
+                                <rect key="frame" x="16" y="435" width="343" height="212"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nsU-E0-0yH" secondAttribute="trailing" constant="16" id="8gC-Dl-8YZ"/>
+                            <constraint firstItem="Je9-kP-WwW" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="A5Q-Ls-D8h"/>
+                            <constraint firstItem="Je9-kP-WwW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="DB0-ts-ZXP"/>
+                            <constraint firstItem="Je9-kP-WwW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="G5g-g8-Yj6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nsU-E0-0yH" secondAttribute="bottom" constant="20" id="NfG-bl-xBu"/>
+                            <constraint firstItem="nsU-E0-0yH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="skV-gA-Jzw"/>
+                            <constraint firstItem="nsU-E0-0yH" firstAttribute="top" secondItem="Je9-kP-WwW" secondAttribute="bottom" constant="16" id="sxg-cU-ubz"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="jBO-hL-YGd">
                         <barButtonItem key="rightBarButtonItem" systemItem="camera" id="zgZ-1B-Wj9">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="cameraPressed:" destination="BYZ-38-t0r" id="Djl-MI-KuM"/>
                             </connections>
@@ -32,6 +50,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="imageView" destination="Je9-kP-WwW" id="Vci-eq-TrV"/>
+                        <outlet property="label" destination="nsU-E0-0yH" id="eDv-I1-i2C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -46,6 +65,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="U4G-IY-Ln0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
