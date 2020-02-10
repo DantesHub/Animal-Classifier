@@ -105,7 +105,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
                         }
                     } else {
                         self.imageView.image = self.pickedImage
-                        self.label.text = "Could not get information on Pokemon from Wikipedia."
+                       
                     }
                 })
             }
