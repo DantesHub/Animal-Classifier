@@ -6,4 +6,4 @@ Testset: handpicked <br>
 If no picture is available from Wikiapedia, it will default to taken photo by user. Description is from<br>
 Wikapedia API 
 
-![Alt Text](https://j.gifs.com/L7l0vA.gif)
+![Alt Text](https://github.com/DantesHub/Pokemon-Classifier/blob/master/gif.gif)
